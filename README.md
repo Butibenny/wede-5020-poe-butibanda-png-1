@@ -1,5 +1,5 @@
 # Project Title
-my aasignment
+my assignment
 
 ## Student Information
 **Student number:** Your student number <br>
