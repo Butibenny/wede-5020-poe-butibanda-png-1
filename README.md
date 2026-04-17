@@ -1,5 +1,5 @@
 # Project Title
-my assignment
+BUTI
 
 ## Student Information
 **Student number:** Your student number <br>
