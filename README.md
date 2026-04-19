@@ -20,7 +20,7 @@ Key Objectives:*Create 24/7 availability
 
 ## Timeline and Milestones
 
-will do it later.
+will do it
 
 ## Sitemap
 
