@@ -21,7 +21,7 @@ will do it later.
 
 ## Sitemap
 
-[Website Sitemap][alt text](img/sitemap.jpg)
+[Website Sitemap]![alt text](img/sitemap.jpg)
 
 ## References
 
