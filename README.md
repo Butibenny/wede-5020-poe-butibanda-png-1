@@ -20,7 +20,10 @@ Key Objectives:*Create 24/7 availability
 
 ## Timeline and Milestones
 
-will do it
+*April 1st to 12th=Proposals planning,first proposal of a small business and Retail business.<br>
+*April 13th to 15th=Planning and preparations of the assignment and it's content.<br>
+*April 16th to 19th=Working on the assignment and adding some final touches(including checking and debugging)<br>
+*April 20th =Submission
 
 ## Sitemap
 

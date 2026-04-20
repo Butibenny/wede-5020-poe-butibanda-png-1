@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
    <!-- Header Section -->
@@ -12,6 +12,7 @@
       <img src="img/jimmy.jpg" alt="Jimmy Neutron Electricians Logo" width="200px" height="200px">
         <h1>Jimmy Neutron Electricians</h1>
     </div>
+    <hr>
         <nav>
         <a href="index.html">Home</a>
         <a href="about-us.html">About Us</a>
@@ -22,10 +23,35 @@
         <a href="Safety-Tips.html">Safety Tips</a>
       </nav>
     </header>
-    
-    <footer>
+    <!-- Main Content-->
+     <main>
+        <p><strong>Contact Information</strong></p>
+        <p>Business Name:Jimmy Neutron Electricians<br>contact person:Ofentse Mahlangu
+        <br>Phone:012 330 5641/0655320607<br>emergency line:0795862622<br>Email:JimmyNeutron@gamil.com
+    <br>Business hours:mon-fri=08:00-17:00<br>sat-sun=09:00-13:00<br>Emergencies:24/7</p>
         <hr>
-        <p> Jimmy Neutron Electricions owned and operated.It is for information purposes only.</p>
+        <!-- The form action should point to your server-side script or form handler -->
+<form action="process_form.php" method="post">
+    
+    <!-- Name field -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <!-- Email field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Message field -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="2" cols="5" required></textarea><br><br>
+    
+    <!-- Submit button -->
+    <input type="submit" value="Send">
+</form>
+    </main>
+<!-- Footer Section -->
+<footer>
+ Jimmy Neutron Electricions owned and operated.It is for information purposes only.</p>
         <p> Jimmy Neutron Electricians.@All rights reserved.</p>
     </footer>
 </body>
