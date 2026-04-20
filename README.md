@@ -31,4 +31,6 @@ Key Objectives:*Create 24/7 availability
 
 ## References
 
-Ensure that all sources used in your assignment are cited and referenced using the Harvard referencing style.
+:Pictures from:https://unsplash.com/s/photos/electrical-component<br>
+:logo:https://www.bing.com/images/search?q=jimmy+neutron&form=HDRSC3&first=1
+:information from:BANDA,B(2026)WEBSITE PROPOSAL FOR JIMMY NEUTRON ELECTRICIANS.

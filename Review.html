@@ -8,22 +8,68 @@
 <body>
    <!-- Header Section -->
     <header>
-    <div>
-      <img src="img/jimmy.jpg" alt="Jimmy Neutron Electricians Logo" width="200px" height="200px">
-        <h1>Jimmy Neutron Electricians</h1>
-    </div>
-        <nav>
+      <img
+        src="img/jimmy.jpg"
+        alt="Description of the image"
+        width="150px"
+        height="150px"
+      />
+      <h1>Jimmy Neutron Electricians</h1>
+      <hr />
+      <nav>
         <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
+        <a href="about us.html">About Us</a>
         <a href="contact.html">Contact</a>
         <a href="Services.html">Services</a>
         <a href="Review.html">Reviews</a>
-        <a href="Get-a-Quote.html">Get a Quote</a>
-        <a href="Safety-Tips.html">Safety Tips</a>
+        <a href="Get a Quote.html">Get a Quote</a>
+        <a href="Safety Tips">Safety Tips</a>
       </nav>
     </header>
-    
-    <footer>
+    <!-- Main Content-->
+     <main><h1>Customer Reviews</h1>
+
+    <!-- Review 1 -->
+    <h2>John Doe</h2>
+    <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+    <blockquote>
+        The service was nice i would definitely recommend it to others.
+    </blockquote>
+    <hr>
+
+    <!-- Review 2 -->
+    <h2>Jane Smith</h2>
+    <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+    <blockquote>
+        Excellent service and quality. I am very satisfied with my service.
+    </blockquote>
+    <hr>
+
+    <!-- Review 3 -->
+    <h2>Michael Brown</h2>
+    <p><strong>Rating:</strong> ★★★☆☆ (3/5)</p>
+    <blockquote>
+        The conection and services was good and average.
+    </blockquote>
+    <hr>
+
+    <!-- Add Review Form -->
+    <h2>Leave a Review</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="rating">Rating (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5"><br><br>
+
+        <label for="review">Your Review:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+</main>
+    <!-- Footer Section -->
+<footer>
         <hr>
         <p> Jimmy Neutron Electricions owned and operated.It is for information purposes only.</p>
         <p> Jimmy Neutron Electricians.@All rights reserved.</p>
