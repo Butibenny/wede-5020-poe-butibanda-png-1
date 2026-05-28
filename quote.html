@@ -3,64 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a Quote and price list</title>
+    <meta name="description" content="Get a free quote for electrical services from Jimmy Neutron Electricians.">
+    <title>Get a Quote | Jimmy Neutron Electricians</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-      <img
-        src="img/jimmy.jpg"
-        alt="Description of the image"
-        width="150px"
-        height="150px"
-      />
-      <h1>Jimmy Neutron Electricians</h1>
-      <hr />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="services.html">Services</a>
-        <a href="review.html">Reviews</a>
-        <a href="quote.html">Get a Quote</a>
-        <a href="safety-tips.html">Safety Tips</a>
-      </nav>
+        <h1>Jimmy Neutron Electricians</h1>
+        <img
+            src="img/fotorech-lamp-2663053_1920.jpg"
+            alt="Jimmy Neutron Electricians Logo"
+            width="200"
+            height="200"
+        >
+        <hr>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="review.html">Reviews</a>
+            <a href="quote.html">Get a Quote</a>
+            <a href="safety-tips.html">Safety Tips</a>
+        </nav>
     </header>
- <!-- Main Content-->
+
+    <!-- Main Content -->
     <main>
-    <h2><strong>Our Price List</strong></h2>
-    <!-- Price List -->
-    <p>Full service or installation=R5000<br>emergency night=R1500
-    <br>quick check=R300</p><br><p>For more information contact the store</p>
+        <h2>Our Price List</h2>
+       
+        <!-- Price List -->
+        <div class="card">
+            <h3>💰 Price List</h3>
+            <p><strong>Full Service or Installation:</strong> R5000</p>
+            <p><strong>Emergency Night Call:</strong> R1500</p>
+            <p><strong>Quick Check:</strong> R300</p>
+            <p>For more information, contact the store.</p>
+        </div>
 
-    <h2><strong>Get a Quote</strong></h2>
+        <h2>Get a Quote</h2>
+       
+        <!-- Quote Request Form -->
+        <div class="card">
+            <h3>📝 Request a Quote</h3>
+            <form action="submit_quote.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+               
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+               
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Select a service --</option>
+                    <option value="Full service">Full Service or Installation (R5000)</option>
+                    <option value="emergency help">Emergency Night Help (R1500)</option>
+                    <option value="quick check">Quick Check (R300)</option>
+                </select>
+               
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Please describe your electrical issue..."></textarea>
+               
+                <input type="submit" value="Request Quote" class="btn">
+            </form>
+        </div>
+    </main>
 
-    <!-- Quote Request Form -->
-    <form action="submit_quote.php" method="post">
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="service">Select Service:</label><br>
-        <select id="service" name="service" required>
-            <option value="">-- Select --</option>
-            <option value="Full service">Full service</option>
-            <option value="emergency help">emergency help</option>
-            <option value="quick check">quick check</option>
-        </select><br><br>
-
-        <label for="details">Additional Details:</label><br>
-        <textarea id="details" name="details" rows="4" cols="40"></textarea><br><br>
-
-        <input type="submit" value="Request Quote">
-    </form>
     <!-- Footer Section -->
     <footer>
-        <hr>
-        <p> Jimmy Neutron Electricions owned and operated.It is for information purposes only.</p>
-        <p> Jimmy Neutron Electricians.@All rights reserved.</p>
+        <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
+        <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
-  </body>
-</html> 
+</body>
+</html>

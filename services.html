@@ -1,88 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>services</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional electrical services from Jimmy Neutron Electricians. Book your service today.">
+    <title>Services | Jimmy Neutron Electricians</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
     <!-- Header Section -->
     <header>
-      <img
-        src="img/jimmy.jpg"
-        alt="Description of the image"
-        width="150px"
-        height="150px"
-      />
-      <h1>Jimmy Neutron Electricians</h1>
-      <hr />
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="services.html">Services</a>
-        <a href="review.html">Reviews</a>
-        <a href="quote.html">Get a Quote</a>
-        <a href="safety-tips.html">Safety Tips</a>
-      </nav>
+        <h1>Jimmy Neutron Electricians</h1>
+        <img
+            src="img/fotorech-lamp-2663053_1920.jpg"
+            alt="Jimmy Neutron Electricians Logo"
+            width="200"
+            height="200"
+        >
+        <hr>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="review.html">Reviews</a>
+            <a href="quote.html">Get a Quote</a>
+            <a href="safety-tips.html">Safety Tips</a>
+        </nav>
     </header>
-    <!-- Main Content-->
+
+    <!-- Main Content -->
     <main>
-      <h1>Our Services</h1>
-      <p>
-        We provide professional electrical services for homes and businesses.
-      </p>
+        <h2>Our Services</h2>
+        <p>We provide professional electrical services for homes and businesses.</p>
 
-      <h2>Available Services</h2>
-      <p>
-        <br /><strong>Emergency Booking</strong> 24/7 urgent electrical repairs.
-        <br /><strong>Wiring & Installation</strong> New wiring, rewiring, and
-        appliance installation. <br /><strong>Normal Service</strong> Routine
-        maintenance and inspections.
-      </p>
+        <h3>Available Services</h3>
+        <div class="card">
+            <ul>
+                <li><strong>Emergency Booking:</strong> 24/7 urgent electrical repairs - From R1500</li>
+                <li><strong>Wiring & Installation:</strong> New wiring, rewiring, and appliance installation - From R5000</li>
+                <li><strong>Normal Service:</strong> Routine maintenance and inspections - From R300</li>
+                <li><strong>Lighting Solutions:</strong> LED installation, landscape lighting, security lights - From R800</li>
+                <li><strong>Electrical Certifications:</strong> COC certificates and safety inspections - From R500</li>
+                <li><strong>Panel Upgrades:</strong> Distribution board upgrades and circuit breakers - From R3500</li>
+                <li><strong>Generator Installation:</strong> Backup power solutions - From R4000</li>
+                <li><strong>Home Automation:</strong> Smart home wiring and automation - From R2000</li>
+            </ul>
+        </div>
 
-      <hr />
+        <hr>
 
-      <h2>Book a Service</h2>
-      <form action="process_booking.php" method="post">
-        <label for="name">Full Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-
-        <label for="phone">Phone Number:</label><br />
-        <input type="tel" id="phone" name="phone" required /><br /><br />
-
-        <label for="service">Select Service:</label><br />
-        <select id="service" name="service" required>
-          <option value="">--Choose a service--</option>
-          <option value="emergency">Emergency Booking</option>
-          <option value="wiring">Wiring & Installation</option>
-          <option value="normal">Normal Service</option></select
-        ><br /><br />
-
-        <label for="date">Preferred Date:</label><br />
-        <input type="date" id="date" name="date" required /><br /><br />
-
-        <label for="details">Additional Details:</label><br />
-        <textarea id="details" name="details" rows="4" cols="40"></textarea
-        ><br /><br />
-
-        <button type="submit">Submit Booking</button>
-      </form>
-
-      <hr />
-
-      <h2>Contact Us</h2>
-      <p>Phone:0655320607</p>
-      <p>Email:JimmyNeutron@gamil.com</p>
+        <h2>Book a Service</h2>
+       
+        <div class="two-column">
+            <div>
+                <div class="card">
+                    <form action="process_booking.php" method="post">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                       
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                       
+                        <label for="service">Select Service:</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Choose a service --</option>
+                            <option value="emergency">Emergency Booking (24/7)</option>
+                            <option value="wiring">Wiring & Installation</option>
+                            <option value="normal">Normal Service</option>
+                            <option value="lighting">Lighting Solutions</option>
+                            <option value="certification">Electrical Certification</option>
+                            <option value="panel">Panel Upgrade</option>
+                            <option value="generator">Generator Installation</option>
+                            <option value="automation">Home Automation</option>
+                        </select>
+                       
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                       
+                        <label for="details">Additional Details:</label>
+                        <textarea id="details" name="details" rows="4"></textarea>
+                       
+                        <button type="submit" class="btn">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+           
+            <div>
+                <div class="card">
+                    <h3>Contact Us</h3>
+                    <p><strong>Phone:</strong> 065 532 0607</p>
+                    <p><strong>Email:</strong> JimmyNeutron@gmail.com</p>
+                    <p><strong>Emergency:</strong> 079 586 2622 (24/7)</p>
+                </div>
+            </div>
+        </div>
     </main>
+
     <!-- Footer Section -->
     <footer>
-      <hr />
-      <p>
-        Jimmy Neutron Electricions owned and operated.It is for information
-        purposes only.
-      </p>
-      <p>Jimmy Neutron Electricians.@All rights reserved.</p>
+        <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
+        <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>

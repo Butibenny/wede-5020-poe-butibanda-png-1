@@ -1,8 +1,6 @@
-/* ========================================
-   PART 2.2: BASE STYLES & CSS RESET
-   ======================================== */
+/* Base style & Css reset */
 
-/* CSS Reset - makes sure all browsers look the same */
+/* CSS Reset - to make sure all browsers look the same */
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +16,7 @@ body {
     background-color: #f4f6f9;
 }
 
-/* ========================================
-   PART 2.3: TYPOGRAPHY STYLES
-   ======================================== */
+/* Typography Styles */
 
 /* Heading styles */
 h1 {
@@ -66,16 +62,14 @@ a {
     color: #333;
 }
 
-/* ========================================
-   PART 2.5: HEADER & NAVIGATION STYLES
-   ======================================== */
+/*  HEADER & NAVIGATION STYLES */
 
 /* Header - dark blue background */
 header {
     background-color: #0b2b4a;
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #f4a261;
+    border-bottom: 4px solid #000000;
 }
 
 /* Logo image styling */
@@ -83,7 +77,7 @@ header img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 4px solid #f4a261;
+    border: 4px solid #000000;
     margin-top: 10px;
     transition: transform 0.3s ease;
 }
@@ -134,9 +128,7 @@ nav a:active {
     transform: translateY(1px);
 }
 
-/* ========================================
-   PART 2.4: MAIN LAYOUT STRUCTURE
-   ======================================== */
+/*  MAIN LAYOUT STRUCTURE */
 
 /* Main content container */
 main {
@@ -145,10 +137,8 @@ main {
     padding: 0 20px;
 }
 
-/* ========================================
-   GRID LAYOUT - for services and reviews
-   Multi-column on desktop
-   ======================================== */
+/* GRID LAYOUT - for services and reviews
+   Multi-column on desktop */
 
 .grid-container {
     display: grid;
@@ -157,9 +147,7 @@ main {
     margin: 30px 0;
 }
 
-/* ========================================
-   FLEXBOX LAYOUT - for two column sections
-   ======================================== */
+/* FLEXBOX LAYOUT - for two column sections */
 
 .two-column {
     display: flex;
@@ -173,9 +161,7 @@ main {
     min-width: 250px;
 }
 
-/* ========================================
-   PART 2.5: CARD STYLES (Visual styling)
-   ======================================== */
+/* CARD STYLES (Visual styling) */
 
 .card {
     background: white;
@@ -192,9 +178,7 @@ main {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ========================================
-   BUTTON STYLES
-   ======================================== */
+/* BUTTON STYLES */
 
 .btn, button {
     display: inline-block;
@@ -219,9 +203,7 @@ main {
     transform: scale(0.98);
 }
 
-/* ========================================
-   FORM STYLES
-   ======================================== */
+/* FORM STYLES */
 
 form {
     background: white;
@@ -261,9 +243,7 @@ textarea {
     resize: vertical;
 }
 
-/* ========================================
-   FOOTER STYLES - Dark blue
-   ======================================== */
+/* FOOTER STYLES - Dark blue */
 
 footer {
     background-color: #0b2b4a;
@@ -279,9 +259,7 @@ footer p {
     color: #bdc3c7;
 }
 
-/* ========================================
-   RESPONSIVE IMAGES
-   ======================================== */
+/* RESPONSIVE IMAGES */
 
 img {
     max-width: 100%;
@@ -296,9 +274,7 @@ img {
     margin: 20px 0;
 }
 
-/* ========================================
-   UTILITY CLASSES
-   ======================================== */
+/* UTILITY CLASSES */
 
 /* Quote highlight box */
 .quote-highlight {
@@ -355,10 +331,8 @@ img {
     border: 0;
 }
 
-/* ========================================
-   PART 3.1 & 3.2: RESPONSIVE DESIGN
-   BREAKPOINTS & RELATIVE UNITS
-   ======================================== */
+/* RESPONSIVE DESIGN
+   BREAKPOINTS & RELATIVE UNITS */
 
 /* TABLET BREAKPOINT (768px - 1024px) */
 @media screen and (max-width: 1024px) {
@@ -467,9 +441,7 @@ img {
     }
 }
 
-/* ========================================
-   HR STYLING (horizontal rule)
-   ======================================== */
+/* HR STYLING (horizontal rule) */
 
 hr {
     border: none;
