@@ -1,192 +1,171 @@
- BASE STYLES & CSS RESET
-   
+/* ========================================
+   PART 2.2: BASE STYLES & CSS RESET
+   ======================================== */
 
-/* CSS Reset - ensures consistent styling across different browsers */
-*,
-*::before,
-*::after {
+/* CSS Reset - makes sure all browsers look the same */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set default styles for entire website */
-html {
-    font-size: 100%; /* 16px default - using rem for responsiveness */
-    scroll-behavior: smooth;
-}
-
+/* Body styles - applies to the whole website */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem; /* 16px */
+    font-size: 16px;
     line-height: 1.6;
-    color: #1e2a3e;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e9eef2 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    color: #333;
+    background-color: #f4f6f9;
 }
 
 /* ========================================
-   TYPOGRAPHY STYLES
-   font-family, font-size, font-weight, line-height, letter-spacing
+   PART 2.3: TYPOGRAPHY STYLES
    ======================================== */
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.02em;
-}
-
-/* H1 on top of the picture */
+/* Heading styles */
 h1 {
-    font-size: 2.5rem; /* 40px */
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2.5rem;
+    font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 h2 {
-    font-size: 2rem; /* 32px */
-    color: #1e2a3e;
-    margin: 1.5rem 0 1rem 0;
-    border-left: 5px solid #f4c542;
-    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
     letter-spacing: -0.5px;
+    line-height: 1.3;
+    margin: 30px 0 20px 0;
+    color: #1a3a5c;
+    border-left: 5px solid #f4a261;
+    padding-left: 15px;
 }
 
 h3 {
-    font-size: 1.5rem; /* 24px */
-    color: #0b2b4a;
-    margin: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
     font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 1.4;
+    margin: 15px 0 10px 0;
+    color: #1a3a5c;
 }
 
 p {
-    margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 15px;
 }
 
+/* Link styles */
 a {
     text-decoration: none;
-    color: inherit;
+    color: #333;
 }
 
 /* ========================================
-   HEADER SECTION - DARK BLUE
+   PART 2.5: HEADER & NAVIGATION STYLES
    ======================================== */
 
+/* Header - dark blue background */
 header {
-    background: linear-gradient(135deg, #0b2b4a 0%, #0a1f36 100%);
-    padding: 1.5rem;
+    background-color: #0b2b4a;
+    padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #f4c542;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #f4a261;
 }
 
-/* Bigger picture - 200px x 200px */
+/* Logo image styling */
 header img {
-    border-radius: 50%;
-    border: 4px solid #f4c542;
-    box-shadow: 0 0 0 8px rgba(244, 197, 66, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 200px;
     height: 200px;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
+    border-radius: 50%;
+    border: 4px solid #f4a261;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
 }
 
+/* Hover effect on logo */
 header img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 0 12px rgba(244, 197, 66, 0.3);
+    transform: scale(1.05);
 }
 
-/* HR styling */
-hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #f4c542, #f4c542, transparent);
-    margin: 1rem 0;
-}
-
-/* ========================================
-   NAVIGATION - FLEXBOX
-   ======================================== */
-
+/* Navigation bar - Flexbox layout */
 nav {
     background-color: #0a1f36;
-    padding: 0.9rem 2rem;
+    padding: 15px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    gap: 10px;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-radius: 50px;
-    margin-top: 0.5rem;
 }
 
+/* Navigation links */
 nav a {
-    color: #ecf0f1;
-    padding: 0.6rem 1.2rem;
+    color: white;
+    padding: 10px 18px;
     font-weight: 600;
-    font-size: 1rem;
-    border-radius: 40px;
-    transition: all 0.25s ease;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
-/* HOVER, FOCUS, ACTIVE pseudo-classes */
+/* Hover effect on navigation links */
 nav a:hover {
-    background-color: #f4c542;
+    background-color: #f4a261;
     color: #0a1f36;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Focus effect for accessibility */
 nav a:focus {
-    background-color: #f4c542;
+    background-color: #f4a261;
     color: #0a1f36;
-    outline: 2px solid #f4c542;
-    outline-offset: 2px;
+    outline: 2px solid white;
 }
 
+/* Active effect when clicking */
 nav a:active {
-    transform: translateY(0);
+    transform: translateY(1px);
 }
 
 /* ========================================
-   MAIN LAYOUT - GRID & FLEXBOX
+   PART 2.4: MAIN LAYOUT STRUCTURE
    ======================================== */
 
+/* Main content container */
 main {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
-    flex: 1;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-/* GRID LAYOUT for Services/Reviews - multi-column on desktop */
+/* ========================================
+   GRID LAYOUT - for services and reviews
+   Multi-column on desktop
+   ======================================== */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 25px;
+    margin: 30px 0;
 }
 
-/* FLEXBOX LAYOUT for two-column sections */
+/* ========================================
+   FLEXBOX LAYOUT - for two column sections
+   ======================================== */
+
 .two-column {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 30px;
+    margin: 30px 0;
 }
 
 .two-column > div {
@@ -194,20 +173,50 @@ main {
     min-width: 250px;
 }
 
-/* Card styling with visual effects */
+/* ========================================
+   PART 2.5: CARD STYLES (Visual styling)
+   ======================================== */
+
 .card {
     background: white;
-    border-radius: 20px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
 }
 
-/* HOVER pseudo-class for cards */
+/* Card hover effect */
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+.btn, button {
+    display: inline-block;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover, button:hover {
+    background-color: #e76f51;
+    transform: scale(1.02);
+}
+
+.btn:active, button:active {
+    transform: scale(0.98);
 }
 
 /* ========================================
@@ -216,39 +225,35 @@ main {
 
 form {
     background: white;
-    padding: 2rem;
-    border-radius: 28px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    margin-top: 1rem;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px 0;
 }
 
 label {
     font-weight: 600;
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.4rem;
-    color: #0b2b4a;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #1a3a5c;
 }
 
-input,
-textarea,
-select {
+input, textarea, select {
     width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 16px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     font-size: 1rem;
     font-family: inherit;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
-/* FOCUS pseudo-class for form inputs */
-input:focus,
-textarea:focus,
-select:focus {
+/* Focus effect on form inputs */
+input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: #f4c542;
-    box-shadow: 0 0 0 3px rgba(244, 197, 66, 0.2);
+    border-color: #f4a261;
+    box-shadow: 0 0 0 3px rgba(244,162,97,0.2);
 }
 
 textarea {
@@ -256,36 +261,26 @@ textarea {
     resize: vertical;
 }
 
-/* Button styles with pseudo-classes */
-button,
-.btn {
-    display: inline-block;
-    background: #f4c542;
-    color: #1e2a3e;
-    border: none;
-    padding: 0.75rem 1.8rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* ========================================
+   FOOTER STYLES - Dark blue
+   ======================================== */
+
+footer {
+    background-color: #0b2b4a;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 3px solid #f4a261;
 }
 
-button:hover,
-.btn:hover {
-    background: #e0b03b;
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-button:active,
-.btn:active {
-    transform: scale(0.98);
+footer p {
+    margin: 5px 0;
+    color: #bdc3c7;
 }
 
 /* ========================================
-   IMAGES - RESPONSIVE
+   RESPONSIVE IMAGES
    ======================================== */
 
 img {
@@ -297,31 +292,8 @@ img {
 .responsive-img {
     width: 100%;
     height: auto;
-    border-radius: 16px;
-    margin: 1rem 0;
-}
-
-/* ========================================
-   FOOTER - DARK BLUE
-   ======================================== */
-
-footer {
-    background: linear-gradient(135deg, #0b2b4a 0%, #0a1f36 100%);
-    color: #bdc3c7;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
-    font-size: 0.85rem;
-    border-top: 3px solid #f4c542;
-}
-
-footer hr {
-    display: none;
-}
-
-footer p {
-    color: #bdc3c7;
-    margin: 0.5rem 0;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 /* ========================================
@@ -330,50 +302,48 @@ footer p {
 
 /* Quote highlight box */
 .quote-highlight {
-    background: #fef5e7;
-    border-left: 5px solid #f4c542;
-    padding: 1.2rem;
-    border-radius: 16px;
-    font-weight: 500;
-    margin: 1rem 0;
+    background: #fff3e0;
+    border-left: 5px solid #f4a261;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 /* Emergency badge */
 .emergency-badge {
-    background: #e63946;
+    background-color: #e63946;
     color: white;
     display: inline-block;
-    padding: 0.3rem 1rem;
-    border-radius: 40px;
+    padding: 5px 12px;
+    border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
-    margin-left: 0.5rem;
+    margin-left: 10px;
 }
 
 /* Safety tips list */
 .safety-list {
     background: white;
-    padding: 1.5rem 2rem;
-    border-radius: 24px;
+    padding: 20px 30px;
+    border-radius: 15px;
     list-style-position: inside;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px 0;
 }
 
 .safety-list li {
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
-/* Google Maps responsive container */
+/* Google Maps container */
 .map-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio using % */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 20px;
-    margin: 1.5rem 0;
+    border-radius: 15px;
+    margin: 20px 0;
 }
 
 .map-container iframe {
@@ -386,149 +356,129 @@ footer p {
 }
 
 /* ========================================
-   RESPONSIVE DESIGN - MEDIA QUERIES
-   BREAKPOINTS: Desktop, Tablet, Mobile
-   Multi-column to single-column layout
+   PART 3.1 & 3.2: RESPONSIVE DESIGN
+   BREAKPOINTS & RELATIVE UNITS
    ======================================== */
 
 /* TABLET BREAKPOINT (768px - 1024px) */
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 95%;
-    }
-   
-    /* Adjust grid for tablet */
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-    }
-   
-    main {
-        padding: 0 1.25rem;
-    }
-   
     h1 {
         font-size: 2rem;
     }
    
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
     }
    
-    /* Slightly smaller image on tablet */
+    .grid-container {
+        gap: 20px;
+    }
+   
     header img {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
 }
 
 /* MOBILE BREAKPOINT (up to 768px)
-   Switches to single-column layout */
+   Changes from multi-column to single-column */
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 90%;
+    /* Smaller fonts on mobile */
+    h1 {
+        font-size: 1.5rem;
     }
    
-    body {
-        line-height: 1.5;
+    h2 {
+        font-size: 1.3rem;
     }
    
-    /* Navigation wraps on mobile */
+    h3 {
+        font-size: 1.2rem;
+    }
+   
+    /* Navigation - wraps on mobile */
     nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.3rem;
-        padding: 0.75rem;
-        border-radius: 30px;
+        padding: 10px;
+        gap: 5px;
     }
    
     nav a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
    
     /* SINGLE COLUMN LAYOUT - grid becomes 1 column */
     .grid-container {
         grid-template-columns: 1fr;
-        gap: 1.25rem;
+        gap: 15px;
     }
    
-    /* Flexbox column layout */
+    /* Flexbox becomes column */
     .two-column {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 20px;
     }
    
-    .two-column > div {
-        flex: auto;
-    }
-   
-    /* Smaller header elements on mobile */
+    /* Smaller logo on mobile */
     header img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
    
-    header {
-        padding: 1rem;
-    }
-   
-    h1 {
-        font-size: 1.5rem;
-    }
-   
+    /* Less padding on mobile */
     main {
-        padding: 0 1rem;
-        margin: 1.5rem auto;
-    }
-   
-    /* Form adjustments for mobile */
-    form {
-        padding: 1.25rem;
-    }
-   
-    /* Full width buttons on mobile */
-    button,
-    .btn {
-        width: 100%;
-        text-align: center;
+        padding: 0 15px;
+        margin: 20px auto;
     }
    
     .card {
-        padding: 1.25rem;
+        padding: 15px;
     }
    
-    /* Responsive iframe for mobile */
-    iframe {
+    form {
+        padding: 15px;
+    }
+   
+    /* Full width buttons on mobile */
+    .btn, button {
         width: 100%;
-        height: auto;
-        min-height: 250px;
+        text-align: center;
     }
 }
 
 /* SMALL MOBILE BREAKPOINT (up to 480px) */
 @media screen and (max-width: 480px) {
     nav a {
-        padding: 0.35rem 0.6rem;
-        font-size: 0.75rem;
+        padding: 5px 10px;
+        font-size: 0.7rem;
     }
    
     h1 {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
    
-    h2 {
-        font-size: 1.2rem;
+    header img {
+        width: 100px;
+        height: 100px;
     }
    
     .card {
-        padding: 1rem;
+        padding: 12px;
     }
-   
-    /* Even smaller image on small mobile */
-    header img {
-        width: 120px;
-        height: 120px;
-    }
+}
+
+/* ========================================
+   HR STYLING (horizontal rule)
+   ======================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f4a261, #f4a261, transparent);
+    margin: 15px 0;
+}
+
+/* Remove hr in footer */
+footer hr {
+    display: none;
 }

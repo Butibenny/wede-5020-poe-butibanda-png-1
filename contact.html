@@ -3,57 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="description" content="Contact Jimmy Neutron Electricians - Get in touch for electrical services, quotes, and emergency assistance.">
+    <title>Contact Us | Jimmy Neutron Electricians</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <!-- Header Section -->
+    <!-- Header Section -->
     <header>
-    <div>
-      <img src="img/jimmy.jpg" alt="Jimmy Neutron Electricians Logo" width="200px" height="200px">
         <h1>Jimmy Neutron Electricians</h1>
-    </div>
-    <hr>
+        <img
+            src="img/fotorech-lamp-2663053_1920.jpg"
+            alt="Jimmy Neutron Electricians Logo"
+            width="200"
+            height="200"
+        >
+        <hr>
         <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="services.html">Services</a>
-        <a href="review.html">Reviews</a>
-        <a href="quote.html">Get a Quote</a>
-        <a href="safety-tips.html">Safety Tips</a>
-      </nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="review.html">Reviews</a>
+            <a href="quote.html">Get a Quote</a>
+            <a href="safety-tips.html">Safety Tips</a>
+        </nav>
     </header>
-    <!-- Main Content-->
-     <main>
-        <p><strong>Contact Information</strong></p>
-        <p>Business Name:Jimmy Neutron Electricians<br>contact person:Ofentse Mahlangu
-        <br>Phone:012 330 5641/0655320607<br>emergency line:0795862622<br>Email:JimmyNeutron@gamil.com
-    <br>Business hours:mon-fri=08:00-17:00<br>sat-sun=09:00-13:00<br>Emergencies:24/7</p><br>
-        
-        <!-- The form action should point to your server-side script or form handler -->
-<form action="process_form.php" method="post">
-    
-    <!-- Name field -->
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-    
-    <!-- Email field -->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    
-    <!-- Message field -->
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="2" cols="5" required></textarea><br><br>
-    
-    <!-- Submit button -->
-    <input type="submit" value="Send">
-</form>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Contact Us</h2>
+       
+        <!-- Contact Information -->
+        <div class="card">
+            <h3>Contact Information</h3>
+            <p><strong>Business Name:</strong> Jimmy Neutron Electricians</p>
+            <p><strong>Contact Person:</strong> Ofentse Mahlangu</p>
+            <p><strong>Phone:</strong> 012 330 5641 / 065 532 0607</p>
+            <p><strong>Emergency Line:</strong> 079 586 2622</p>
+            <p><strong>Email:</strong> JimmyNeutron@gmail.com</p>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="card">
+            <h3>Business Hours</h3>
+            <p><strong>Monday - Friday:</strong> 08:00 - 17:00</p>
+            <p><strong>Saturday - Sunday:</strong> 09:00 - 13:00</p>
+            <p><strong>Emergencies:</strong> 24/7</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="card">
+            <h3>Send us a Message</h3>
+            <form action="process_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+               
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+               
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+               
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </div>
     </main>
-<!-- Footer Section -->
-<footer>
-    <br>
- Jimmy Neutron Electricions owned and operated.It is for information purposes only.</p>
-        <p> Jimmy Neutron Electricians.@All rights reserved.</p>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
+        <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
 </body>
 </html>
