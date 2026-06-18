@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get a free quote for electrical services from Jimmy Neutron Electricians.">
+    <meta name="description" content="Get a free quote for electrical services from Jimmy Neutron Electricians. View our price list and request a quote online.">
     <title>Get a Quote | Jimmy Neutron Electricians</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Jimmy Neutron Electricians</h1>
         <img
-            src="img/fotorech-lamp-2663053_1920.jpg"
+            src="img/jimmy.jpg"
             alt="Jimmy Neutron Electricians Logo"
             width="200"
             height="200"
@@ -29,51 +28,74 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <h2>Our Price List</h2>
+        <h2>Get a Quote & Price List</h2>
        
-        <!-- Price List -->
-        <div class="card">
-            <h3> Price List</h3>
-            <p><strong>Full Service or Installation:</strong> R5000</p>
-            <p><strong>Emergency Night Call:</strong> R1500</p>
-            <p><strong>Quick Check:</strong> R300</p>
-            <p>For more information, contact the store.</p>
-        </div>
+        <div class="two-column">
+            <!-- Left Column: Price List -->
+            <div>
+                <div class="card">
+                    <h3> Our Price List</h3>
+                    <ul>
+                        <li><strong>Full Service or Installation:</strong> R5000</li>
+                        <li><strong>Emergency Night Call:</strong> R1500</li>
+                        <li><strong>Quick Check:</strong> R300</li>
+                        <li><strong>Lighting Installation (per point):</strong> R350</li>
+                        <li><strong>Plug/Socket Replacement:</strong> R150 each</li>
+                        <li><strong>Circuit Breaker Replacement:</strong> R400 - R800</li>
+                        <li><strong>Electrical Certificate (COC):</strong> R500 - R1200</li>
+                        <li><strong>Generator Installation:</strong> From R4000</li>
+                    </ul>
+                    <div class="quote-highlight">
+                        <p> For more information, contact the store at <strong>012 330 5641</strong></p>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Get a Quote</h2>
-       
-        <!-- Quote Request Form -->
-        <div class="card">
-            <h3> Request a Quote</h3>
-            <form action="submit_quote.php" method="post">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-               
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-               
-                <label for="service">Select Service:</label>
-                <select id="service" name="service" required>
-                    <option value="">-- Select a service --</option>
-                    <option value="Full service">Full Service or Installation (R5000)</option>
-                    <option value="emergency help">Emergency Night Help (R1500)</option>
-                    <option value="quick check">Quick Check (R300)</option>
-                </select>
-               
-                <label for="details">Additional Details:</label>
-                <textarea id="details" name="details" rows="4" placeholder="Please describe your electrical issue..."></textarea>
-               
-                <input type="submit" value="Request Quote" class="btn">
-            </form>
+            <!-- Right Column: Quote Form -->
+            <div>
+                <div class="card">
+                    <h3> Request a Quote</h3>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                   
+                    <form id="quoteForm" action="#" method="post">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                       
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                       
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                       
+                        <label for="service-type">Type of Service *</label>
+                        <select id="service-type" name="service-type" required>
+                            <option value="">-- Select service type --</option>
+                            <option value="repairs">Electrical Repairs</option>
+                            <option value="installations">New Installations</option>
+                            <option value="lighting">Lighting Installation/Upgrade</option>
+                            <option value="panel">Panel/DB Board Upgrade</option>
+                            <option value="wiring">Complete Rewiring</option>
+                            <option value="inspection">Safety Inspection/CoC</option>
+                            <option value="emergency">Emergency Service</option>
+                            <option value="other">Other</option>
+                        </select>
+                       
+                        <label for="description">Project Description *</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Please describe the electrical work needed in as much detail as possible..." required></textarea>
+                       
+                        <button type="submit" class="btn">Request Quote →</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
         <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

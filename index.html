@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jimmy Neutron Electricians - Professional electrical services in South Africa. Repairs, installations, and upgrades for residential and commercial properties.">
     <title>Jimmy Neutron Electricians | Home</title>
@@ -13,9 +12,7 @@
     <header>
         <h1>Jimmy Neutron Electricians</h1>
         <img
-            src="img/fotorech-lamp-2663053_1920.jpg"
-            srcset="img/fotorech-lamp-2663053_1920.jpg 400w, img/fotorech-lamp-2663053_1920.jpg 800w"
-            sizes="(max-width: 768px) 150px, 200px"
+            src="img/jimmy.jpg"
             alt="Jimmy Neutron Electricians Logo"
             width="200"
             height="200"
@@ -32,13 +29,14 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <h2>Welcome to Jimmy Neutron Electricians</h2>
         <p>We will always be there for you. <strong>Safety should always be the #1 priority when electricity is involved.</strong></p>
        
-        <!-- Responsive image with srcset -->
+        <!-- Responsive Image -->
         <img
-            src="img/electronic pic.jpg"
+            src="img/electronic_pic.jpg"
             alt="Professional electrician at work"
             class="responsive-img"
         >
@@ -46,7 +44,7 @@
         <p>Jimmy Neutron Electricians is the go-to electrician services provider in South Africa.<br>
         Servicing the commercial and residential markets we offer repairs, installations and upgrades delivering excellent work, at competitive prices, every time!</p>
 
-        <!-- Two column layout using Flexbox -->
+        <!-- Two Column Layout -->
         <div class="two-column">
             <div class="card">
                 <h3>Why Choose Us?</h3>
@@ -57,19 +55,31 @@
                     <li>Free Quotes</li>
                 </ul>
             </div>
-           
             <div class="card">
                 <h3>Our Promise</h3>
                 <p>We deliver excellent workmanship on every job, big or small. Customer satisfaction is our top priority.</p>
                 <a href="quote.html" class="btn">Get a Free Quote →</a>
             </div>
         </div>
+
+        <!-- Image Gallery Slider -->
+        <div class="card">
+            <h3> Our Gallery</h3>
+            <div class="slider-container">
+                <img src="img/electronic_pic.jpg" alt="Electrical work" class="slider-img">
+                <img src="img/connect pic.jpg" alt="Electrical connection" class="slider-img">
+                <img src="img/de.jpg" alt="Electrical repair" class="slider-img">
+            </div>
+        </div>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
         <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Customer reviews for Jimmy Neutron Electricians. Read feedback and leave your own review.">
+    <meta name="description" content="Read customer reviews for Jimmy Neutron Electricians. See what our clients say about our electrical services.">
     <title>Customer Reviews | Jimmy Neutron Electricians</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Jimmy Neutron Electricians</h1>
         <img
-            src="img/fotorech-lamp-2663053_1920.jpg"
+            src="img/jimmy.jpg"
             alt="Jimmy Neutron Electricians Logo"
             width="200"
             height="200"
@@ -29,56 +28,84 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <h2>Customer Reviews</h2>
-       
-        <!-- Review 1 -->
-        <div class="card">
-            <h3>John Doe</h3>
-            <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4/5)</p>
-            <p>"The service was nice. I would definitely recommend it to others."</p>
-        </div>
-       
-        <!-- Review 2 -->
-        <div class="card">
-            <h3>Jane Smith</h3>
-            <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
-            <p>"Excellent service and quality. I am very satisfied with my service."</p>
-        </div>
-       
-        <!-- Review 3 -->
-        <div class="card">
-            <h3>Michael Brown</h3>
-            <p><strong>Rating:</strong> ⭐⭐⭐ (3/5)</p>
-            <p>"The connection and services was good and average."</p>
+        <p> 4.7 out of 5 stars based on 156 reviews | See what our customers are saying</p>
+
+        <!-- Grid Layout for Reviews -->
+        <div class="grid-container">
+            <div class="card">
+                <h3>John Doe</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4/5)</p>
+                <p>"The service was nice. I would definitely recommend it to others."</p>
+            </div>
+           
+            <div class="card">
+                <h3>Jane Smith</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p>"Excellent service and quality. I am very satisfied with my service."</p>
+            </div>
+           
+            <div class="card">
+                <h3>Michael Brown</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐ (3/5)</p>
+                <p>"The connection and services was good and average."</p>
+            </div>
+           
+            <div class="card">
+                <h3>Sarah Johnson</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p>"Very professional team! They fixed my electrical issue quickly and efficiently."</p>
+            </div>
+           
+            <div class="card">
+                <h3>David Williams</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4/5)</p>
+                <p>"Good service, reasonable prices. Would use them again."</p>
+            </div>
+           
+            <div class="card">
+                <h3>Thabo Nkosi</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+                <p>"Best electricians in town! Came on time and did an excellent job."</p>
+            </div>
         </div>
 
-        <hr>
+        <!-- Review Form -->
+        <div class="quote-highlight">
+            <h3> Leave a Review</h3>
+            <p>Share your experience with Jimmy Neutron Electricians. We value your feedback!</p>
+        </div>
 
-        <!-- Leave a Review Section -->
-        <h2>Leave a Review</h2>
-       
         <div class="card">
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h3>Write Your Review</h3>
+            <form id="reviewForm" action="#" method="post">
+                <label for="review-name">Name *</label>
+                <input type="text" id="review-name" name="name" required>
                
-                <label for="rating">Rating (1-5):</label>
-                <input type="number" id="rating" name="rating" min="1" max="5" required>
+                <label for="review-rating">Rating (1-5) *</label>
+                <select id="review-rating" name="rating" required>
+                    <option value="">-- Select rating --</option>
+                    <option value="5">⭐⭐⭐⭐⭐ (5/5) - Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ (4/5) - Very Good</option>
+                    <option value="3">⭐⭐⭐ (3/5) - Average</option>
+                    <option value="2">⭐⭐ (2/5) - Poor</option>
+                    <option value="1">⭐ (1/5) - Very Poor</option>
+                </select>
                
-                <label for="review">Your Review:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
+                <label for="review-text">Your Review *</label>
+                <textarea id="review-text" name="review" rows="4" placeholder="Please share your experience with our service..." required></textarea>
                
-                <input type="submit" value="Submit Review" class="btn">
+                <button type="submit" class="btn">Submit Review</button>
             </form>
         </div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
         <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

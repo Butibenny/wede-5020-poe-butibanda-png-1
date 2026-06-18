@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional electrical services from Jimmy Neutron Electricians. Book your service today.">
+    <meta name="description" content="Professional electrical services from Jimmy Neutron Electricians. Emergency repairs, wiring installations, maintenance, and more.">
     <title>Services | Jimmy Neutron Electricians</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Jimmy Neutron Electricians</h1>
         <img
-            src="img/fotorech-lamp-2663053_1920.jpg"
+            src="img/jimmy.jpg"
             alt="Jimmy Neutron Electricians Logo"
             width="200"
             height="200"
@@ -29,57 +28,105 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <h2>Our Services</h2>
-        <p>We provide professional electrical services for homes and businesses.</p>
+        <p>We provide professional electrical services for homes and businesses. All our work is done by licensed, certified electricians with years of experience.</p>
 
-        <h3>Available Services</h3>
-        <div class="card">
-            <ul>
-                <li><strong>Emergency Booking:</strong> 24/7 urgent electrical repairs - From R1500</li>
-                <li><strong>Wiring & Installation:</strong> New wiring, rewiring, and appliance installation - From R5000</li>
-                <li><strong>Normal Service:</strong> Routine maintenance and inspections - From R300</li>
-                <li><strong>Lighting Solutions:</strong> LED installation, landscape lighting, security lights - From R800</li>
-                <li><strong>Electrical Certifications:</strong> COC certificates and safety inspections - From R500</li>
-                <li><strong>Panel Upgrades:</strong> Distribution board upgrades and circuit breakers - From R3500</li>
-                <li><strong>Generator Installation:</strong> Backup power solutions - From R4000</li>
-                <li><strong>Home Automation:</strong> Smart home wiring and automation - From R2000</li>
-            </ul>
+        <!-- Grid Layout for Services -->
+        <div class="grid-container">
+            <div class="card">
+                <h3> Emergency Booking</h3>
+                <p><span class="emergency-badge">24/7 Available</span></p>
+                <p>Urgent electrical repairs available 24 hours a day, 7 days a week. We respond within 2 hours.</p>
+                <p><strong>Price:</strong> From R1500</p>
+            </div>
+           
+            <div class="card">
+                <h3> Wiring & Installation</h3>
+                <p>New wiring, rewiring, appliance installation, ceiling fans, lighting fixtures, and complete home electrical setups.</p>
+                <p><strong>Price:</strong> From R5000</p>
+            </div>
+           
+            <div class="card">
+                <h3> Normal Service</h3>
+                <p>Routine maintenance, safety inspections, electrical certificate of compliance (COC), and general check-ups.</p>
+                <p><strong>Price:</strong> From R300</p>
+            </div>
+           
+            <div class="card">
+                <h3> Lighting Solutions</h3>
+                <p>LED lighting installation, landscape lighting, security lights, indoor and outdoor lighting design.</p>
+                <p><strong>Price:</strong> From R800</p>
+            </div>
+           
+            <div class="card">
+                <h3> Electrical Certifications</h3>
+                <p>Electrical Certificate of Compliance (COC), safety inspections for property sales, and insurance documentation.</p>
+                <p><strong>Price:</strong> From R500</p>
+            </div>
+           
+            <div class="card">
+                <h3>Panel Upgrades</h3>
+                <p>Distribution board upgrades, circuit breaker replacements, surge protection installation.</p>
+                <p><strong>Price:</strong> From R3500</p>
+            </div>
+           
+            <div class="card">
+                <h3> Commercial Services</h3>
+                <p>Office wiring, retail store lighting, industrial electrical systems, and regular compliance inspections.</p>
+                <p><strong>Price:</strong> Quote based on project</p>
+            </div>
+           
+            <div class="card">
+                <h3> Generator Installation</h3>
+                <p>Generator connection, transfer switch installation, backup power solutions, and maintenance.</p>
+                <p><strong>Price:</strong> From R4000</p>
+            </div>
+           
+            <div class="card">
+                <h3> Home Automation</h3>
+                <p>Smart home wiring, automated lighting control, security system integration, and smart switch installation.</p>
+                <p><strong>Price:</strong> From R2000</p>
+            </div>
         </div>
 
         <hr>
 
+        <!-- Booking Form -->
         <h2>Book a Service</h2>
-       
         <div class="two-column">
             <div>
                 <div class="card">
-                    <form action="process_booking.php" method="post">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
+                    <h3> Service Booking Form</h3>
+                    <form id="bookingForm" action="#" method="post">
+                        <label for="booking-name">Full Name *</label>
+                        <input type="text" id="booking-name" name="name" required>
                        
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <label for="booking-phone">Phone Number *</label>
+                        <input type="tel" id="booking-phone" name="phone" required>
                        
-                        <label for="service">Select Service:</label>
-                        <select id="service" name="service" required>
+                        <label for="booking-email">Email Address</label>
+                        <input type="email" id="booking-email" name="email">
+                       
+                        <label for="booking-service">Select Service *</label>
+                        <select id="booking-service" name="service" required>
                             <option value="">-- Choose a service --</option>
-                            <option value="emergency">Emergency Booking (24/7)</option>
-                            <option value="wiring">Wiring & Installation</option>
-                            <option value="normal">Normal Service</option>
-                            <option value="lighting">Lighting Solutions</option>
-                            <option value="certification">Electrical Certification</option>
-                            <option value="panel">Panel Upgrade</option>
-                            <option value="generator">Generator Installation</option>
-                            <option value="automation">Home Automation</option>
+                            <option value="emergency">Emergency Booking (24/7) - R1500</option>
+                            <option value="wiring">Wiring & Installation - R5000+</option>
+                            <option value="normal">Normal Service - R300+</option>
+                            <option value="lighting">Lighting Solutions - R800+</option>
+                            <option value="certification">Electrical Certification - R500+</option>
+                            <option value="panel">Panel Upgrade - R3500+</option>
+                            <option value="commercial">Commercial Services - Quote Based</option>
+                            <option value="generator">Generator Installation - R4000+</option>
+                            <option value="automation">Home Automation - R2000+</option>
                         </select>
                        
-                        <label for="date">Preferred Date:</label>
-                        <input type="date" id="date" name="date" required>
+                        <label for="booking-date">Preferred Date *</label>
+                        <input type="date" id="booking-date" name="date" required>
                        
-                        <label for="details">Additional Details:</label>
-                        <textarea id="details" name="details" rows="4"></textarea>
+                        <label for="booking-details">Additional Details</label>
+                        <textarea id="booking-details" name="details" rows="4" placeholder="Please describe your electrical issue or requirements..."></textarea>
                        
                         <button type="submit" class="btn">Submit Booking</button>
                     </form>
@@ -88,19 +135,32 @@
            
             <div>
                 <div class="card">
-                    <h3>Contact Us</h3>
+                    <h3> Contact Us</h3>
                     <p><strong>Phone:</strong> 065 532 0607</p>
+                    <p><strong>Emergency Line:</strong> 079 586 2622 (24/7)</p>
                     <p><strong>Email:</strong> JimmyNeutron@gmail.com</p>
-                    <p><strong>Emergency:</strong> 079 586 2622 (24/7)</p>
+                </div>
+
+                <div class="quote-highlight">
+                    <h3> Why Choose Our Services?</h3>
+                    <ul>
+                        <li>Licensed and certified electricians</li>
+                        <li>Free quotes and transparent pricing</li>
+                        <li>Quality workmanship guaranteed</li>
+                        <li>Emergency service available 24/7</li>
+                        <li>Competitive rates</li>
+                        <li>Fully insured</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
         <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

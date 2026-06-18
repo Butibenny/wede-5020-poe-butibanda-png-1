@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Jimmy Neutron Electricians</h1>
         <img
-            src="img/fotorech-lamp-2663053_1920.jpg"
+            src="img/jimmy.jpg"
             alt="Jimmy Neutron Electricians Logo"
             width="200"
             height="200"
@@ -29,51 +28,61 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <h2>Contact Us</h2>
        
-        <!-- Contact Information Card -->
-        <div class="card">
-            <h3> Our Location</h3>
-            <p><strong>Business Name:</strong> Jimmy Neutron Electricians</p>
-            <p><strong>Address:</strong><br>
-            123 Main Street<br>
-            Johannesburg, 2001<br>
-            South Africa</p>
-           
-            <h3> Contact Details</h3>
-            <p><strong>Phone:</strong> 012 330 5641 / 065 532 0607</p>
-            <p><strong>Emergency Line:</strong> 079 586 2622 (24/7)</p>
-            <p><strong>Email:</strong> JimmyNeutron@gmail.com</p>
-           
-            <h3> Business Hours</h3>
-            <ul>
-                <li><strong>Monday - Friday:</strong> 08:00 - 17:00</li>
-                <li><strong>Saturday - Sunday:</strong> 09:00 - 13:00</li>
-                <li><strong>Emergencies:</strong> 24/7 Available</li>
-            </ul>
+        <div class="two-column">
+            <!-- Left Column: Contact Info -->
+            <div>
+                <div class="card">
+                    <h3> Our Location</h3>
+                    <p><strong>Business Name:</strong> Jimmy Neutron Electricians</p>
+                    <p><strong>Address:</strong><br>
+                    123 Main Street<br>
+                    Johannesburg, 2001<br>
+                    South Africa</p>
+                   
+                    <h3> Contact Details</h3>
+                    <p><strong>Phone:</strong> 012 330 5641 / 065 532 0607</p>
+                    <p><strong>Emergency Line:</strong> 079 586 2622 (24/7)</p>
+                    <p><strong>Email:</strong> JimmyNeutron@gmail.com</p>
+                   
+                    <h3>Business Hours</h3>
+                    <ul>
+                        <li><strong>Monday - Friday:</strong> 08:00 - 17:00</li>
+                        <li><strong>Saturday - Sunday:</strong> 09:00 - 13:00</li>
+                        <li><strong>Emergencies:</strong> 24/7 Available</li>
+                    </ul>
+                </div>
+
+                <div class="quote-highlight">
+                    <p> <strong>Emergency?</strong> Call our 24/7 emergency line: <strong>079 586 2622</strong></p>
+                </div>
+            </div>
+
+            <!-- Right Column: Google Map -->
+            <div>
+                <div class="card">
+                    <h3> Find Us Here</h3>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.234567890123!2d28.047305!3d-26.195246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1a5c9a6b6b%3A0x2b3a8f8c9e5a6b7c!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <p><small> Click on the map for directions or to view larger</small></p>
+                </div>
+            </div>
         </div>
 
-        <!-- Google Map Card -->
+        <!-- Contact Form with Validation -->
+        <h2>Send us a message</h2>
         <div class="card">
-            <h3>Find Us Here</h3>
-            <!-- Simple Google Map iframe -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.234567890123!2d28.047305!3d-26.195246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1a5c9a6b6b%3A0x2b3a8f8c9e5a6b7c!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
-                width="100%"
-                height="300"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-            <p><small> Click on the map for directions or to view larger</small></p>
-        </div>
-
-        <!-- Contact Form Card -->
-        <div class="card">
-            <h3> Send us a message</h3>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" required>
                
@@ -100,17 +109,13 @@
                 <button type="submit" class="btn">Send Message →</button>
             </form>
         </div>
-
-        <!-- Emergency Highlight Box -->
-        <div class="quote-highlight">
-            <p> <strong>Emergency?</strong> Call our 24/7 emergency line: <strong>079 586 2622</strong></p>
-        </div>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>Jimmy Neutron Electricians owned and operated. It is for information purposes only.</p>
         <p>Jimmy Neutron Electricians. © All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
