@@ -44,3 +44,10 @@ The website uses a single external CSS file (`css/style.css`) that is linked to 
 **Link to CSS in all HTML pages:**
 
 <link rel="stylesheet" href="css/style.css">
+
+### JAVA SCRIPT Information
+ The website uses a single external CSS file ([java](js/script.js)) that is linked to all HTML pages. This ensures consistent styling across the entire website.
+
+**Link to CSS in all HTML pages:**
+
+<script src="js/script.js"></script>
